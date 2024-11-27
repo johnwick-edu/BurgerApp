@@ -2,6 +2,7 @@
 package Models;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
  
 public class Burger {
@@ -33,8 +34,12 @@ public class Burger {
     
     @Override
     public String toString() {
-        return "Burger with toppings: "+toppings +"\n Total Price: R "+calculatePrice();
+        return "Burger with toppings: "+toppings +"\nTotal Price: R "+calculatePrice();
     }
     
+    
+    public ArrayList<String> getToppings(){
+        return this.toppings;
+    }
     
 }
